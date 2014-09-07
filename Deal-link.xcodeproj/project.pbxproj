@@ -8,10 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		EBD6958119BC9DC20072F4AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6958019BC9DC20072F4AA /* AppDelegate.swift */; };
-		EBD6958319BC9DC20072F4AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6958219BC9DC20072F4AA /* ViewController.swift */; };
 		EBD6958619BC9DC20072F4AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD6958419BC9DC20072F4AA /* Main.storyboard */; };
 		EBD6958819BC9DC20072F4AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBD6958719BC9DC20072F4AA /* Images.xcassets */; };
 		EBD6959419BC9DC20072F4AA /* Deal_linkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6959319BC9DC20072F4AA /* Deal_linkTests.swift */; };
+		EBD6959E19BCA27D0072F4AA /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6959D19BCA27D0072F4AA /* MapController.swift */; };
+		EBD695A019BCA3010072F4AA /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6959F19BCA3010072F4AA /* MenuController.swift */; };
+		EBD695A219BCA4EA0072F4AA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD695A119BCA4EA0072F4AA /* MapKit.framework */; };
+		EBD695A619BCB4BC0072F4AA /* MessagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD695A519BCB4BC0072F4AA /* MessagesController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,12 +31,15 @@
 		EBD6957B19BC9DC20072F4AA /* Deal-link.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Deal-link.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD6957F19BC9DC20072F4AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBD6958019BC9DC20072F4AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EBD6958219BC9DC20072F4AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EBD6958519BC9DC20072F4AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBD6958719BC9DC20072F4AA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EBD6958D19BC9DC20072F4AA /* Deal-linkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Deal-linkTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD6959219BC9DC20072F4AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBD6959319BC9DC20072F4AA /* Deal_linkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deal_linkTests.swift; sourceTree = "<group>"; };
+		EBD6959D19BCA27D0072F4AA /* MapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapController.swift; path = ../MapController.swift; sourceTree = "<group>"; };
+		EBD6959F19BCA3010072F4AA /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		EBD695A119BCA4EA0072F4AA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		EBD695A519BCB4BC0072F4AA /* MessagesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBD695A219BCA4EA0072F4AA /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +64,7 @@
 		EBD6957219BC9DC20072F4AA = {
 			isa = PBXGroup;
 			children = (
+				EBD695A119BCA4EA0072F4AA /* MapKit.framework */,
 				EBD6957D19BC9DC20072F4AA /* Deal-link */,
 				EBD6959019BC9DC20072F4AA /* Deal-linkTests */,
 				EBD6957C19BC9DC20072F4AA /* Products */,
@@ -75,11 +83,13 @@
 		EBD6957D19BC9DC20072F4AA /* Deal-link */ = {
 			isa = PBXGroup;
 			children = (
+				EBD6959D19BCA27D0072F4AA /* MapController.swift */,
 				EBD6958019BC9DC20072F4AA /* AppDelegate.swift */,
-				EBD6958219BC9DC20072F4AA /* ViewController.swift */,
 				EBD6958419BC9DC20072F4AA /* Main.storyboard */,
 				EBD6958719BC9DC20072F4AA /* Images.xcassets */,
 				EBD6957E19BC9DC20072F4AA /* Supporting Files */,
+				EBD6959F19BCA3010072F4AA /* MenuController.swift */,
+				EBD695A519BCB4BC0072F4AA /* MessagesController.swift */,
 			);
 			path = "Deal-link";
 			sourceTree = "<group>";
@@ -208,8 +218,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBD6958319BC9DC20072F4AA /* ViewController.swift in Sources */,
+				EBD6959E19BCA27D0072F4AA /* MapController.swift in Sources */,
+				EBD695A019BCA3010072F4AA /* MenuController.swift in Sources */,
 				EBD6958119BC9DC20072F4AA /* AppDelegate.swift in Sources */,
+				EBD695A619BCB4BC0072F4AA /* MessagesController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
