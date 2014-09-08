@@ -14,7 +14,6 @@
 		EBD6959E19BCA27D0072F4AA /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6959D19BCA27D0072F4AA /* MapController.swift */; };
 		EBD695A019BCA3010072F4AA /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6959F19BCA3010072F4AA /* MenuController.swift */; };
 		EBD695A219BCA4EA0072F4AA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD695A119BCA4EA0072F4AA /* MapKit.framework */; };
-		EBD695A619BCB4BC0072F4AA /* MessagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD695A519BCB4BC0072F4AA /* MessagesController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +38,6 @@
 		EBD6959D19BCA27D0072F4AA /* MapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapController.swift; path = ../MapController.swift; sourceTree = "<group>"; };
 		EBD6959F19BCA3010072F4AA /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		EBD695A119BCA4EA0072F4AA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		EBD695A519BCB4BC0072F4AA /* MessagesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +87,6 @@
 				EBD6958719BC9DC20072F4AA /* Images.xcassets */,
 				EBD6957E19BC9DC20072F4AA /* Supporting Files */,
 				EBD6959F19BCA3010072F4AA /* MenuController.swift */,
-				EBD695A519BCB4BC0072F4AA /* MessagesController.swift */,
 			);
 			path = "Deal-link";
 			sourceTree = "<group>";
@@ -221,7 +218,6 @@
 				EBD6959E19BCA27D0072F4AA /* MapController.swift in Sources */,
 				EBD695A019BCA3010072F4AA /* MenuController.swift in Sources */,
 				EBD6958119BC9DC20072F4AA /* AppDelegate.swift in Sources */,
-				EBD695A619BCB4BC0072F4AA /* MessagesController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +403,7 @@
 				EBD6959919BC9DC20072F4AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EBD6959A19BC9DC20072F4AA /* Build configuration list for PBXNativeTarget "Deal-linkTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +412,7 @@
 				EBD6959C19BC9DC20072F4AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
