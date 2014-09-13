@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB610FF819BDC3B100635060 /* WebAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB610FF719BDC3B100635060 /* WebAPIModel.swift */; };
+		EB610FFA19BDD67F00635060 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB610FF919BDD67F00635060 /* SwiftyJSON.swift */; };
+		EB610FFC19BDD73D00635060 /* ShopsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB610FFB19BDD73D00635060 /* ShopsController.swift */; };
+		EBC7FF4A19C28CC30030CDBA /* TestAPINewUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC7FF4919C28CC30030CDBA /* TestAPINewUserController.swift */; };
 		EBD6958119BC9DC20072F4AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6958019BC9DC20072F4AA /* AppDelegate.swift */; };
 		EBD6958619BC9DC20072F4AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD6958419BC9DC20072F4AA /* Main.storyboard */; };
 		EBD6958819BC9DC20072F4AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBD6958719BC9DC20072F4AA /* Images.xcassets */; };
@@ -27,6 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EB610FF719BDC3B100635060 /* WebAPIModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebAPIModel.swift; sourceTree = "<group>"; };
+		EB610FF919BDD67F00635060 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		EB610FFB19BDD73D00635060 /* ShopsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopsController.swift; sourceTree = "<group>"; };
+		EBC7FF4919C28CC30030CDBA /* TestAPINewUserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAPINewUserController.swift; sourceTree = "<group>"; };
 		EBD6957B19BC9DC20072F4AA /* Deal-link.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Deal-link.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD6957F19BC9DC20072F4AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBD6958019BC9DC20072F4AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +95,10 @@
 				EBD6958719BC9DC20072F4AA /* Images.xcassets */,
 				EBD6957E19BC9DC20072F4AA /* Supporting Files */,
 				EBD6959F19BCA3010072F4AA /* MenuController.swift */,
+				EB610FF719BDC3B100635060 /* WebAPIModel.swift */,
+				EB610FF919BDD67F00635060 /* SwiftyJSON.swift */,
+				EB610FFB19BDD73D00635060 /* ShopsController.swift */,
+				EBC7FF4919C28CC30030CDBA /* TestAPINewUserController.swift */,
 			);
 			path = "Deal-link";
 			sourceTree = "<group>";
@@ -218,6 +230,10 @@
 				EBD6959E19BCA27D0072F4AA /* MapController.swift in Sources */,
 				EBD695A019BCA3010072F4AA /* MenuController.swift in Sources */,
 				EBD6958119BC9DC20072F4AA /* AppDelegate.swift in Sources */,
+				EBC7FF4A19C28CC30030CDBA /* TestAPINewUserController.swift in Sources */,
+				EB610FFC19BDD73D00635060 /* ShopsController.swift in Sources */,
+				EB610FFA19BDD67F00635060 /* SwiftyJSON.swift in Sources */,
+				EB610FF819BDC3B100635060 /* WebAPIModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
