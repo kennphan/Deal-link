@@ -49,8 +49,6 @@ class ShopsController: UIViewController, UITableViewDataSource, UITableViewDeleg
         
         let cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "MyTestCell") as UITableViewCell!
         
-        
-        
         var rowData: NSDictionary = self.tableData[indexPath.row] as NSDictionary
 
         //cell.textLabel.text = rowData["trackName"] as String
@@ -109,18 +107,30 @@ class ShopsController: UIViewController, UITableViewDataSource, UITableViewDeleg
         // Request complete, self.data should now hold the resulting info
         // Convert it to a string
         var dataAsString: NSString = NSString(data: self.data, encoding: NSUTF8StringEncoding)
-print(data)
+//print(dataAsString)
+
+var testJSONdata = JSONValue(self.data)
+print(testJSONdata)
+        
         // Convert the retrieved data in to an object through JSON deserialization
         var err: NSError
-        var jsonResult: NSDictionary = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as NSDictionary
-        //print(jsonResult)
+        //var jsonResult: NSDictionary = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as NSDictionary
+
+        var jsonResult = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as NSArray // as NSDictionary
+        
+
+        self.tableData = jsonResult
+        self.shopTableView.reloadData()
+        /*
         if jsonResult.count > 0 {
-            //if 1 == 1  {
             var results: NSArray = jsonResult["results"] as NSArray
             self.tableData = results
             self.shopTableView.reloadData()
             
         }
+        */
+
+
         
     }
     
